@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wochenplaner</title>
+<style>
+  :root { --text: #1d1d1f; --leise: #5b5b60; --bg: #ffffff; --linie: #e3e3e6; }
+  @media (prefers-color-scheme: dark) { :root { --text: #ececf0; --leise: #a3a3ab; --bg: #16161a; --linie: #2c2c33; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, sans-serif; }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; padding-top: 16px; border-top: 1px solid var(--linie); }
+  p.leise, li.leise { color: var(--leise); }
+</style>
+</head>
+<body>
+<main>
+<h1>Wochenplaner</h1>
+<p class="leise">Privates Familien-Werkzeug, nicht öffentlich nutzbar.</p>
+
+<p>Der Wochenplaner schickt einer einzelnen Familie einmal pro Woche per Telegram eine Wochenübersicht
+(Termine, Fristen, Schultermine) und eine Essensplanung mit Einkaufsliste. Er wird ausschließlich vom
+Inhaber des verbundenen Google-Kontos für sich selbst genutzt.</p>
+
+<h2 id="datenschutz">Datenschutzerklärung</h2>
+<p><strong>Welche Google-Daten genutzt werden:</strong> Mit Zustimmung des Kontoinhabers liest der Wochenplaner
+Termine aus den freigegebenen Google-Kalendern (Titel, Datum, Uhrzeit, Ort) und legt nur nach einem
+ausdrücklichen Klick des Kontoinhabers („Eintragen“) neue Termine an.</p>
+<p><strong>Wofür:</strong> ausschließlich, um dem Kontoinhaber selbst eine Wochenübersicht zu senden.</p>
+<ul>
+  <li>Keine Weitergabe oder Verkauf von Daten an Dritte, keine Werbung, kein Profiling.</li>
+  <li>Zur Formulierung der Übersicht werden Auszüge an die Claude-API (Anthropic) übermittelt; dort werden sie
+      nur zur Beantwortung der Anfrage verarbeitet.</li>
+  <li>Kalenderdaten werden nicht dauerhaft gespeichert. Gespeichert werden nur Terminvorschläge der laufenden Woche
+      in einem privaten Repository des Kontoinhabers.</li>
+  <li>Die Nutzung von Daten aus Google-APIs entspricht der
+      <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+      einschließlich der „Limited Use“-Anforderungen.</li>
+</ul>
+<p><strong>Widerruf:</strong> Der Zugriff lässt sich jederzeit unter
+<a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> entziehen.</p>
+
+<h2 id="nutzungsbedingungen">Nutzungsbedingungen</h2>
+<p>Der Wochenplaner ist ein privates Werkzeug ohne öffentliches Angebot. Eine Nutzung durch andere Personen ist
+nicht vorgesehen. Es gibt keine Gewähr für Vollständigkeit oder Richtigkeit der Übersichten.</p>
+
+<p class="leise">Stand: November 2026</p>
+</main>
+</body>
+</html>
